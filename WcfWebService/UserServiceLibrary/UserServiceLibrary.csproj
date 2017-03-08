@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataMembers.cs" />
+    <Compile Include="Data\DataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserContract.cs" />
     <Compile Include="UserService.cs" />
