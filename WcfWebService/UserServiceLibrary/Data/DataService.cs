@@ -30,7 +30,8 @@ namespace UserServiceLibrary.Data
 
             Cassandra.Mapping.MappingConfiguration.Global.Define(new Map<User>().TableName("users")
                 .Column(c => c.Id, cm => cm.WithName("id"))
-                .Column(c => c.Addresses, cm => cm.WithName("addresses")));
+                .Column(c => c.Addresses, cm => cm.WithName("addresses").WithFrozenKey())
+                .Column(c => c.DirectReport, cm => cm.WithName("direct_reports").WithFrozenValue()));
         }
 
     }

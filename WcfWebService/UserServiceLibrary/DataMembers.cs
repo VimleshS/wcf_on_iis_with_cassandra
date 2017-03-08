@@ -12,6 +12,8 @@ namespace WcfWebService
         [DataMember]
         public IDictionary<string, Address> Addresses { get; set; }
         [DataMember]
+        public IEnumerable<FullName> DirectReport { get; set; }
+        [DataMember]
         public FullName Name { get; set; }
     }
 
