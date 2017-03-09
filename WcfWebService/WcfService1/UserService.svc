@@ -1,3 +1,0 @@
-﻿<%@ ServiceHost
-    Service="UserServiceLibrary.UserService" 
-    Factory="System.ServiceModel.Activation.WebServiceHostFactory"%>
